@@ -4,20 +4,9 @@
 </template>
 
 <script lang="ts" setup>
-import {
-  Chart as ChartJS,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-  CategoryScale,
-  LinearScale,
-  type ChartData,
-} from 'chart.js'
 import { Bar } from 'vue-chartjs'
 import colors from 'tailwindcss/colors'
-
-ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
+import { type ChartData } from 'chart.js'
 
 const colorMode = useColorMode()
 colorMode.preference = 'dark'
