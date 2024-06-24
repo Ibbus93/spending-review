@@ -6,4 +6,10 @@ export default defineNuxtConfig({
     compatibilityVersion: 4,
   },
   css: ['~/assets/main.scss'],
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
 })
